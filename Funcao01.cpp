@@ -6,9 +6,9 @@
 //3) A multiplicacao entre eles....OK
 //4) A divisao do primeiro pelosegundo....OK
 //5) A exponenciacao(primeiro valor base e segundo valor, expoente)....OK
-//6) Calcular exponenciacao com recursividade
-//7) Calcular o fatorial do primeiro valor e termial do segundo valor
-//8) Pesquisar sobre parametros com valor default na assinatura das funcoes
+//6) Calcular exponenciacao com recursividade....OK
+//7) Calcular o fatorial do primeiro valor e termial do segundo valor....OK
+//8) Pesquisar sobre parametros com valor default na assinatura das funcoes....OK
 //Obs.: Utilizar a chamada de funcoes e usar estrutura de repeticao no item 5
 
 
@@ -86,7 +86,7 @@ int Exponenciar_Recursividade(int base, int expoente) {
 	if(expoente == 0) {
 		return 1;
 	} else {
-		return base * Exponenciar_Recursividade(base,expoente - 1);
+		return base * Exponenciar_Recursividade(base,expoente - 1); // Recursividade
 	}
 }
 
@@ -95,7 +95,7 @@ int Fatorial(int vlr1) {
 	if (vlr1 == 0) {
 		return 1;
 	} else {
-		return vlr1 * Fatorial(vlr1 - 1);
+		return vlr1 * Fatorial(vlr1 - 1); // Recursividade
 	}
 }
 
@@ -104,6 +104,6 @@ int Termializar(int vlr2) {
 	if (vlr2 == 0) {
 		return 0;
 	} else {
-		return vlr2 + Termializar (vlr2 - 1);
+		return vlr2 + Termializar (vlr2 - 1); //Recursividade
 	}
 }
